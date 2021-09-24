@@ -5,28 +5,30 @@
         <meta name="viewport" content="width=madevice-width, initial-scale=1.0">
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}?{% now 'U' %}">
+        <link rel="icon" type="image/png"  href="{% static 'me/prt.png' %}">
         <title>Portfolio</title>
     </head>
 
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">{{ home.name }}</a>
-                </div>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Designs</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+    <header>
+        <div class="container">
+            <a class="logo" href="#home">
+                <img src="{% static 'me/prt.png' %}" width="30" height="30" class="d-inline-block align-top">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Designs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="{% static 'me/cv_final.pdf' %}" target="_blank">Resume</a></li>
+                </ul>
             </nav>
-        </header>
+        </div>
+    </header>
 
+
+    <body>
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home" id="home">
