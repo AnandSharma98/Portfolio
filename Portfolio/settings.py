@@ -130,7 +130,7 @@ USE_TZ = True
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dshiiizgb',
     'API_KEY': '816824888582525',
-    'API_SECRET': 'CLOUDINARY_URL=cloudinary://816824888582525:6Jf5aITwzKFcJlgcYhT3bmBz3Xk@dshiiizgb',
+    'API_SECRET': '6Jf5aITwzKFcJlgcYhT3bmBz3Xk',
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
