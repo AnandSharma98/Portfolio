@@ -23,6 +23,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('me.urls')),
 ]
-if settings.DEBUG:  # comparison left
-    urlpatterns += static(settings.MEDIA_URL,
-                          document_root=settings.MEDIA_ROOT)
