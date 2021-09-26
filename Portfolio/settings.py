@@ -16,6 +16,8 @@ import django_heroku
 import dj_database_url
 from decouple import config
 import cloudinary
+import cloudinary.uploader
+import cloudinary.api
 import cloudinary_storage
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -127,12 +129,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dshiiizgb',
-    'API_KEY': '816824888582525',
-    'API_SECRET': '6Jf5aITwzKFcJlgcYhT3bmBz3Xk',
-}
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'dshiiizgb',
+#     'API_KEY': '816824888582525',
+#     'API_SECRET': '6Jf5aITwzKFcJlgcYhT3bmBz3Xk',
+# }
 
+cloudinary.config(
+  cloud_name = "dshiiizgb",
+  api_key = "816824888582525",
+  api_secret = "6Jf5aITwzKFcJlgcYhT3bmBz3Xk",
+  secure = True
+)
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
