@@ -369,12 +369,14 @@ display: inline;
 }
 
 
-.bd-grid{
+@media screen and (min-width: 1024px){
+    .bd-grid{
         margin-left: auto;
         margin-right: auto;
+    }
 }
 
- tall screens usage
+/* For tall screens on mobiles */
 @media screen and (min-height: 721px) {
     .home__container {
         height: 640px;
@@ -385,6 +387,7 @@ display: inline;
     }
 }
 
+*/
 .fa {
   margin-right: var(--mb-1);
   font-size: 1.4rem;
@@ -421,6 +424,7 @@ header::after {
 }
 
 nav {
+  display:box;
   margin-top: auto;
   float: right;
 }
