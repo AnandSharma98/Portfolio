@@ -12,7 +12,7 @@ admin.site.register(About)
 
 class ProfileInline(admin.TabularInline):  # just another way of registering model
     model = workSample
-    extra = 1
+    extra = 2
 
 
 # Skills

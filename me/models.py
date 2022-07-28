@@ -38,11 +38,6 @@ class Category(models.Model):
 
     updated = models.DateTimeField(auto_now=True)
 
-    # class Meta:  # ye bas islie h ki , jab model kholega category ka toh vha kya likha aana chaie, add skill
-    # by default model name lika aata h
-    #     verbose_name = 'Skill'
-    #     verbose_name_plural = 'Skills'
-
     def __str__(self):
         return self.name
 
