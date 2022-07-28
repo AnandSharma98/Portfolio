@@ -368,14 +368,13 @@ display: inline;
     }
 }
 
-/*
-@media screen and (min-width: 1024px){
-    .bd-grid{
+
+.bd-grid{
         margin-left: auto;
         margin-right: auto;
-    }
 }
 
+/*
  tall screens usage
 @media screen and (min-height: 721px) {
     .home__container {
