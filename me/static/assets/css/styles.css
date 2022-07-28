@@ -374,7 +374,6 @@ display: inline;
         margin-right: auto;
 }
 
-/*
  tall screens usage
 @media screen and (min-height: 721px) {
     .home__container {
@@ -386,7 +385,6 @@ display: inline;
     }
 }
 
-*/
 .fa {
   margin-right: var(--mb-1);
   font-size: 1.4rem;
